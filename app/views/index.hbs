@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>mangastream</title>
+
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" height="50" alt "logo"/>
+      </div>
+      <div class="social">
+        <img src="images/facebook.png" width="30" height="30" alt "facebook"/>
+        <img src="images/twitter.png" width="38" height="37" alt "twitter"/>
+      </div>
+    </header>
+
+    <nav>
+        <ul>
+         <li><a class="nav-home" href="">Home</a></li> </div>
+            <li class="dropdown"><a href="">Read Manga <img src="/images/triang_menu.png"/></a>
+              <ul> 
+                  <li><a class="dropdownColor" href="#">Attack on Titan</a></li> 
+                  <li><a class="dropdownColor" href="#">Berserk</a></li> 
+                  <li><a class="dropdownColor" href="#">Dragon Ball Super</a></li> 
+                  <li><a class="dropdownColor" href="#">Haikyuu!!</a></li> 
+                  <li><a class="dropdownColor" href="#">Hajime no Ippo</a></li> 
+                  <li><a class="dropdownColor" href="#">My Hero Academia</a></li> 
+                  <li><a class="dropdownColor" href="#">One Piece</a></li> 
+                  <li><a class="dropdownColor" href="#">One Punch Man</a></li> 
+                  <li><a class="dropdownColor" href="#">Promised Neverland</a></li> 
+                  <li><a class="dropdownColor" href="#">Shokugeki no Souma</a></li> 
+                  <li><a class="dropdownColor" href="#">The Seven Deadly Sins</a></li> 
+                  <li><a class="dropdownColor" href="#">Tokyo Ghoul:re</a></li> 
+                  <li class="divider"></li>
+                  <li><a class="dropdownColor" href="#">Full List</a></li> 
+                </ul>
+            </li>
+            <li><a href="">Recruitment</a></li>
+            <li><a href="">Color Pages</a></li>
+          </ul>
+          <ul class="menu2">
+            <li><img class="imdDonate" src="images/donate.png" height="14"/></li>
+            <li><a href="/novaPublicacao">Nova Publicação</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/logout">Logout</a></li>
+            <li><a href="/cadastro">Cadastro</a></li>
+          </ul>
+    </nav>
+
+    <div class="imagens">
+      <div class="img">
+        <img src="images/img1.png"/>
+        <img src="images/img2.png"/>
+        <img src="images/img3.png"/>
+      </div>
+        <div class="ad">
+          <img src="images/ad.png"/>
+      </div>
+    </div>    
+
+    
+    <div class="conteudo">
+      <div class="text">
+          {{#publicacoes}}
+            {{!-- <h2> </h2> --}}
+            <h1>
+              {{titulo}}
+              <small>
+                {{dateFormat date "DD/MM/YYYY"}}
+                <strong>
+                  {{usuario}}
+                </strong>
+              </small>
+            </h1>
+            <p>{{texto}}</p>
+          {{/publicacoes}}
+
+        <div class="divider2"></div>
+        <div class="botoes">
+          <btn>
+            <a href="">← Newer</a>
+          </btn>
+          <btn>
+              <a href="">Older →</a>
+          </btn>
+        </div>
+      </div>
+      <div class="container">
+          <h2 class="listTitulo">New Releases</h2>
+            <ul class="list">
+                <li><span>X</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, quidem!</li>
+                <li><span>X</span>Alias, placeat. Distinctio id officia perspiciatis praesentium, facere possimus nesciunt?</li>
+                <li><span>X</span>Dolorum quae quibusdam provident eos esse nesciunt quas voluptate voluptates.</li>
+                <li><span>X</span>Quae quod similique error, vero earum delectus nihil quaerat odio?</li>
+                <li><span>X</span>Eaque placeat, maiores harum quaerat amet quae repudiandae assumenda quas?</li>
+            </ul>
+        </div>
+    </div>
+    
+  </body>
+</html>
+
